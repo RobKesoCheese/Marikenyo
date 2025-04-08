@@ -258,14 +258,14 @@ p {
   line-height: 1.2;
 }
 
-.heart, .bazaar, .big, .stilleto {
+.heart, .bazaar, .big, .stilleto, .caravan, .concert, .firework{
   display: flex;
   align-items: center;
   gap: 13%; /* Space between items */
   margin-bottom: 40px;
 }
 
-.bazaar {
+.bazaar, .caravan, .firework {
   gap: 13%;
 }
 
@@ -282,20 +282,20 @@ p {
   transform: scale(1.03); /* Scale up image on hover */
 }
 
-.heart-text, .bazaar-text, .big-text, .stilleto-text {
+.heart-text, .bazaar-text, .big-text, .stilleto-text, .caravan-text, .concert-text, .firework-text {
   text-align: center;
 }
 
-.bazaar-text {
+.bazaar-text, .caravan-text, .firework-text {
   margin-left: 15%;
 }
 
-.heart-text h5, .bazaar-text h5, .big-text h5, .stilleto-text h5 {
+.heart-text h5, .bazaar-text h5, .big-text h5, .stilleto-text h5, .caravan-text h5, .concert-text h5, .firework-text h5 {
   font-size: clamp(1.5rem, 3vw, 2rem); /* Responsive font size */
   margin-bottom: 10px;
 }
 
-.heart-text p, .bazaar-text p, .big-text p, .stilleto-text p {
+.heart-text p, .bazaar-text p, .big-text p, .stilleto-text p, .caravan-text p, .concert-text p, .firework-text p {
   font-size: clamp(1rem, 2vw, 1.5rem); /* Responsive font size */
 }
 
@@ -413,7 +413,7 @@ p {
   }
 
   /* Heart and Bazaar sections */
-  .heart, .bazaar, .big, .stilleto {
+  .heart, .bazaar, .big, .stilleto, .caravan, .concert, .firework {
     flex-direction: column !important;
     gap: 25px !important;
     margin-bottom: 50px !important;
@@ -424,7 +424,7 @@ p {
     margin: 0 auto !important;
   }
 
-  .heart-text, .bazaar-text, .big-text, .stilleto-text {
+  .heart-text, .bazaar-text, .big-text, .stilleto-text, .caravan-text, .concert-text, .firework-text {
     margin-left: 0 !important;
     order: 2;
     width: 100% !important;
@@ -434,11 +434,11 @@ p {
     order: 1;
   }
 
-  .heart-text h5, .bazaar-text h5, .big-text h5, .stilleto-text h5 {
+  .heart-text h5, .bazaar-text h5, .big-text h5, .stilleto-text h5, .caravan-text h5, .concert-text h5, .firework-text h5 {
     font-size: 1.5rem !important;
   }
 
-  .heart-text p, .bazaar-text p, .big-text p, .stilleto-text p {
+  .heart-text p, .bazaar-text p, .big-text p, .stilleto-text p, .caravan-text p, .concert-text p, .firework-text p {
     font-size: 1.2rem !important;
   }
 
@@ -474,7 +474,19 @@ p {
     padding: 8px 16px !important;
   }
   
-  .heart-text h5, .bazaar-text h5, .big-text h5, .stilleto-text h5 {
+  .heart-text h5, .bazaar-text h5, .big-text h5, .stilleto-text h5, .caravan-text h5, .concert-text h5, .firework-text h5  {
     font-size: 1.3rem !important;
   }
+}
+
+.info-text {
+  display: none;
+  margin-top: 10px;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.image-box.active .info-text {
+  display: block;
 }
