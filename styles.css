@@ -252,9 +252,99 @@ p {
   .legacy-img img, .about-img img {
     width: 150px;
   }
+
+  .front .overlay {
+    padding: 150px 20px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .front h1 {
+    font-size: 2rem !important;
+    margin-bottom: 15px;
+  }
+
+  .front .description {
+    font-size: 1rem !important;
+    margin-bottom: 25px;
+  }
+
+  .btn.yellow {
+    padding: 10px 20px !important;
+    font-size: 0.9rem !important;
+  }
+
+  .about, .legacy {
+    flex-direction: column;
+    padding: 30px 20px !important;
+  }
+
+  .about-text, .legacy-text {
+    width: 100% !important;
+    padding-right: 0 !important;
+    margin-bottom: 20px;
+  }
+
+  .about-img, .legacy-img {
+    width: 100% !important;
+    justify-content: center !important;
+    margin: 20px 0 !important;
+  }
+
+  .legacy-img img, .about-img img {
+    width: 80% !important;
+    max-width: none !important;
+  }
+
+  /* Heart and Bazaar sections */
+  .heart, .bazaar {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+
+  .bigblackshoe-img, .bazaar-img {
+    width: 80% !important;
+    margin: 0 auto !important;
+  }
+
+  .heart-text, .bazaar-text {
+    margin-left: 0 !important;
+    order: 2;
+  }
+
+  .bazaar-img {
+    order: 1;
+  }
+
+  .heart-text h5, .bazaar-text h5 {
+    font-size: 1.5rem !important;
+  }
+
+  .heart-text p, .bazaar-text p {
+    font-size: 1.2rem !important;
+  }
+
+  .heartshoe h1 {
+    font-size: 2rem !important;
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 768px) {
+
+  .front .overlay {
+    padding: 200px 50px;
+  }
+  
+  .navbar {
+    padding: 15px 20px !important;
+  }
+  
+  .logo-icon {
+    height: 40px !important;
+  }
+
   .navbar {
     flex-wrap: wrap;
     align-items: flex-start;
