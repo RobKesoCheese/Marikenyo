@@ -32,6 +32,7 @@ body::-webkit-scrollbar {
 /* Navigation*/
 .navbar {
   backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.6);
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -109,7 +110,7 @@ body::-webkit-scrollbar {
 
 .btn.yellow {
   background-color: #F5C242;
-  color: #1D1912;
+  color: #F3F3E6;
   padding: 12px 24px;
   border-radius: 8px;
   text-decoration: none;
@@ -176,10 +177,6 @@ p {
   transition: transform 0.3s ease;
 }
 
-.logo-icon:hover {
-  transform: scale(1.05);
-}
-
 .legacy-img img, .about-img img {
   width: 100%;
   max-width: 350px;
@@ -188,11 +185,6 @@ p {
   margin: 0 auto;
   object-fit: contain;
   transition: transform 0.3s ease;
-}
-
-.legacy-img img:hover, 
-.about-img img:hover {
-  transform: scale(1.03);
 }
 
 .about-img, .legacy-img {
@@ -217,6 +209,7 @@ p {
 }
 
 .nav-menu ul {
+  background-color: transparent;
   list-style: none;
   gap: 20px;
 }
@@ -310,6 +303,7 @@ p {
 
   .nav-menu ul {
     flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
     display: none;
     width: 100%;
     padding: 15px 0;
