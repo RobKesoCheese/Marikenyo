@@ -7,19 +7,19 @@
 
 html {
   width: 100%;
-  overflow-x: hidden; /* Prevent horizontal scroll */
-  scroll-behavior: smooth; /* Smooth scrolling */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
   height: 100%;
   overflow-x: hidden;
 }
 
 body {
   font-family: "Georgia", serif;
-  color: #F3F3E6;
+  color: #F3F3E6;  
   background-color: #1D1912;
   width: 100%;
   position: relative;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden;
   line-height: 1.5;
 }
 
@@ -33,62 +33,62 @@ body::-webkit-scrollbar {
 
 /* ========== Navbar Section ========== */
 .navbar {
-  backdrop-filter: blur(5px); /* Blur effect for background */
-  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.6);
   position: fixed;
   display: flex;
-  justify-content: space-between; /* Space between logo and menu */
+  justify-content: space-between;
   align-items: center;
   top: 0;
   left: 0;
   width: 100%;
   padding: 15px 30px;
-  z-index: 1000; /* Ensures navbar is on top of other elements */
-  transition: background-color 0.3s ease; /* Smooth transition on scroll */
+  z-index: 1000;
+  transition: background-color 0.3s ease;
 }
 
 .navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.9); /* Darken background when scrolling */
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .navbar .logo {
   background-color: transparent;
   padding: 5px 10px;
   border-radius: 6px;
-  font-weight: bold; /* Bold font for logo */
+  font-weight: bold;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 20px; /* Space between menu items */
+  gap: 20px;
 }
 
 .navbar a {
   color: #F3F3E6;
   text-decoration: none;
   font-weight: 500;
-  transition: opacity 0.3s ease; /* Smooth opacity transition on hover */
+  transition: opacity 0.3s ease;
 }
 
 .navbar a:hover {
-  opacity: 0.8; /* Change opacity on hover */
+  opacity: 0.8;
 }
 
 /* ========== Hero Section ========== */
 .front {
   position: relative;
-  background: url("marikenyobg.png") center/cover no-repeat; /* Background image */
-  height: 90vh; /* Height of the hero section */
+  background: url("marikenyobg.png") center/cover no-repeat;
+  height: 90vh;
   min-height: 500px;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center content vertically and horizontally */
+  justify-content: center;
   margin-top: 0;
 }
 
 .front .overlay {
-  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
   display: flex;
@@ -99,53 +99,53 @@ body::-webkit-scrollbar {
 }
 
 .overlay h1 {
-  font-size: clamp(2rem, 6vw, 3rem); /* Responsive font size */
+  font-size: clamp(2rem, 6vw, 3rem);
   margin-bottom: 15px;
   line-height: 1.2;
 }
 
 .front .description {
-  font-size: clamp(1rem, 2.5vw, 1.1rem); /* Responsive font size */
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
   margin-bottom: 25px;
   max-width: 600px;
   padding: 0 20px;
 }
 
 .btnexplore {
-  background-color: #F5C242; /* Yellow button color */
+  background-color: #F5C242;
   color: #F3F3E6;
   padding: 12px 24px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
-  transition: all 0.3s ease; /* Smooth transition */
+  transition: all 0.3s ease;
   border: none;
   cursor: pointer;
 }
 
 .btndiscover {
-  background-color: #F5C242; /* Yellow button color */
+  background-color: #F5C242;
   color: #F3F3E6;
   padding: 12px 24px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
-  transition: all 0.3s ease; /* Smooth transition */
+  transition: all 0.3s ease;
   border: none;
   cursor: pointer;
   margin-top: 15ic;
 }
 
 .btnexplore:hover {
-  transform: translateY(-2px); /* Slight move up on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btndiscover:hover {
-  transform: translateY(-2px); /* Slight move up on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -164,12 +164,12 @@ body::-webkit-scrollbar {
 
 h2 {
   margin-bottom: 20px;
-  font-size: clamp(1.3rem, 3vw, 1.5rem); /* Responsive font size */
+  font-size: clamp(2rem, 3vw, 1.5rem);
   color: #F3F3E6;
 }
 
 p {
-  font-size: clamp(0.9rem, 2vw, 1rem); /* Responsive font size */
+  font-size: clamp(0.9rem, 2vw, 1rem);
   line-height: 1.6;
   color: #F3F3E6;
 }
@@ -234,7 +234,7 @@ p {
 }
 
 .hamburger:active {
-  transform: scale(0.95); /* Slight scale effect when clicked */
+  transform: scale(0.95);
 }
 
 .nav-menu ul {
@@ -253,7 +253,7 @@ p {
 
 .heartshoe h1 {
   text-align: center;
-  font-size: clamp(2rem, 5vw, 3rem); /* Responsive font size */
+  font-size: clamp(2rem, 5vw, 3rem);
   margin: 0 auto 1ch;
   line-height: 1.2;
 }
@@ -261,25 +261,33 @@ p {
 .heart, .bazaar, .big, .stilleto, .caravan, .concert, .firework{
   display: flex;
   align-items: center;
-  gap: 13%; /* Space between items */
+  gap: 13%;
   margin-bottom: 40px;
 }
 
 .bazaar, .caravan, .firework {
   gap: 13%;
+  margin-right: 10ic;
+  flex-direction: row-reverse;
 }
 
 .bigblackshoe-img, .bazaar-img {
   width: 30%;
+  height: auto;
   border-radius: 5px;
   border: 2.5px outset #BB8525;
   margin-left: 10%;
   transition: transform 0.3s ease;
+  padding: 3px;
+}
+
+.bazaar-img {
+  width: 35%;
 }
 
 .bigblackshoe-img:hover, 
 .bazaar-img:hover {
-  transform: scale(1.03); /* Scale up image on hover */
+  transform: scale(1.03);
 }
 
 .heart-text, .bazaar-text, .big-text, .stilleto-text, .caravan-text, .concert-text, .firework-text {
@@ -291,13 +299,135 @@ p {
 }
 
 .heart-text h5, .bazaar-text h5, .big-text h5, .stilleto-text h5, .caravan-text h5, .concert-text h5, .firework-text h5 {
-  font-size: clamp(1.5rem, 3vw, 2rem); /* Responsive font size */
+  font-size: clamp(1.5rem, 3vw, 2rem);
   margin-bottom: 10px;
 }
 
 .heart-text p, .bazaar-text p, .big-text p, .stilleto-text p, .caravan-text p, .concert-text p, .firework-text p {
-  font-size: clamp(1rem, 2vw, 1.5rem); /* Responsive font size */
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
+
+.seperate {
+  border-bottom: 2px solid #3a3325;
+}
+
+
+.team-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-heading {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.5rem ;
+  margin-bottom: 10px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.team-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  position: relative;
+  background-color: transparent;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+  flex: 0 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.card-box {
+  width: 360px;
+  height: 160px;
+  border: 3px solid #BB8525;
+  background-color: #000;
+  margin-top: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.role {
+  background-color: #BB8525;
+  color: #000;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+/* Team Carousel Styles */
+.team-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.team-slides {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+}
+
+.carousel-arrow {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #F3F3E6;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+}
+
+.carousel-arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.teamcredit {
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 0 auto 1ch;
+  line-height: 1.2;
+}
+
+/* Desktop styles - show all cards */
+@media screen and (min-width: 769px) {
+  .team-slides {
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 180px;
+  }
+}
+
 
 /* ========== Media Queries Section ========== */
 @media screen and (max-width: 1024px) {
@@ -370,6 +500,75 @@ p {
   
   .heartshoe h1 {
     font-size: 2.2rem !important;
+  }
+
+  .bazaar, .firework, .caravan {
+    padding-left: 0.5ic;
+    width: 100%;
+  }
+  .bazaar-img {
+    text-align: center !important; 
+  }
+
+  .team-slides {
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 20px;
+  }
+
+  .section-heading {
+    margin-left: 0;
+  }
+  
+  .card {
+    scroll-snap-align: center;
+    min-width: calc(100% - 40px);
+    margin: 0 10px;
+  }
+
+  .card-box {
+    max-width: 360px;
+    width: 100%;
+    height: 260px;
+    margin: 0;
+  }
+
+  .role {
+    max-width: calc(100% - 12px);
+    width: 100%;
+  }
+  
+  .carousel-arrow {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  /* Hide scrollbar */
+  .team-slides::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Desktop styles - show all cards */
+@media screen and (min-width: 769px) {
+  .team-slides {
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 180px;
   }
 }
 
