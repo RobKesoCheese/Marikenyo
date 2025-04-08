@@ -78,7 +78,7 @@ body::-webkit-scrollbar {
 /* ========== Hero Section ========== */
 .front {
   position: relative;
-  background: url("marikenyobg.png") center/cover no-repeat;
+  background: url("marikenyobg.jpg") center/cover no-repeat;
   height: 90vh;
   min-height: 500px;
   display: flex;
@@ -323,7 +323,7 @@ p {
 .section-heading {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2.5rem ;
-  margin-bottom: 10px;
+  margin-bottom: -30px;
   font-weight: 100;
   text-align: center;
 }
@@ -372,6 +372,10 @@ p {
   text-align: center;
   padding: 5px 0;
   font-size: 14px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 /* Team Carousel Styles */
@@ -418,76 +422,78 @@ p {
 }
 
 /* Desktop styles - show all cards */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .team-slides {
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
   }
   
   .card {
-    width: 180px;
+    width: 180px !important;
   }
+
 }
 
 
 /* ========== Media Queries Section ========== */
 @media screen and (max-width: 1024px) {
   .legacy-img img, .about-img img {
-    width: 250px;
+    width: 250px !important;
   }
   
   .about, .legacy {
-    padding: 50px 8%;
+    padding: 50px 8% !important;
   }
+  
 }
 
 @media screen and (max-width: 768px) {
   .legacy-img img, .about-img img {
-    width: 200px;
+    width: 200px !important;
   }
 
   .about-img {
-    justify-content: flex-start;
+    justify-content: flex-start !important;
   }
 
   .legacy-img {
-    justify-content: flex-end;
+    justify-content: flex-end !important;
   }
   
   /* Mobile Menu */
   .hamburger {
-    display: block;
-    margin-left: auto;
+    display: block !important;
+    margin-left: auto !important;
   }
 
   .nav-menu ul {
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.5);
-    display: none;
-    width: 100%;
-    padding: 15px 0;
-    position: absolute;
-    left: 0;
-    top: 100%;
+    flex-direction: column !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    display: none !important;
+    width: 100% !important;
+    padding: 15px 0 !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 100% !important;
   }
 
   .nav-menu.show ul {
-    display: flex;
+    display: flex !important;
   }
 
   .nav-menu ul li {
-    text-align: center;
-    padding: 12px 0;
+    text-align: center !important;
+    padding: 12px 0 !important;
   }
   
   .about, .legacy {
-    flex-direction: column;
-    padding: 40px 5%;
+    flex-direction: column !important;
+    padding: 40px 5% !important;
   }
 
   .about-text, .legacy-text {
-    width: 100%;
-    padding-right: 0;
-    margin-bottom: 25px;
+    width: 100% !important;
+    padding-right: 0 !important;
+    margin-bottom: 25px !important;
   }
   
   .legacy-text {
@@ -503,68 +509,69 @@ p {
   }
 
   .bazaar, .firework, .caravan {
-    padding-left: 0.5ic;
-    width: 100%;
+    padding-left: 0.5ic !important;
+    width: 100% !important;
   }
   .bazaar-img {
     text-align: center !important; 
   }
 
-  .team-slides {
-    justify-content: flex-start;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    padding: 0 20px;
+  .team-slides { 
+    justify-content: flex-start !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding: 0 20px !important;
   }
 
   .section-heading {
-    margin-left: 0;
+    margin-left: 0 !important;
   }
   
   .card {
-    scroll-snap-align: center;
-    min-width: calc(100% - 40px);
-    margin: 0 10px;
+    scroll-snap-align: center !important;
+    min-width: calc(100% - 40px) !important;
+    max-width: 300px !important;
+    margin: 0 10px !important;
   }
 
   .card-box {
-    max-width: 360px;
-    width: 100%;
-    height: 260px;
-    margin: 0;
+    max-width: 360px !important;
+    width: 100% !important;
+    height: 260px !important;
+    margin: 0 !important;
   }
 
   .role {
-    max-width: calc(100% - 12px);
-    width: 100%;
+    max-width: calc(100% - 12px) !important;
+    width: 100% !important;
   }
   
   .carousel-arrow {
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    display: block !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
   }
   
   .prev {
-    left: 0;
+    left: 0 !important;
   }
   
   .next {
-    right: 0;
+    right: 0 !important;
   }
   
   /* Hide scrollbar */
   .team-slides::-webkit-scrollbar {
-    display: none;
+    display: none !important;
   }
 }
 
 /* Desktop styles - show all cards */
 @media screen and (min-width: 769px) {
   .team-slides {
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
   }
   
   .card {
@@ -574,7 +581,7 @@ p {
 
 @media screen and (max-width: 480px) {
   .legacy-img img, .about-img img {
-    width: 180px;
+    width: 180px !important;
   }
   
   .front .overlay {
@@ -583,12 +590,12 @@ p {
 
   .front h1 {
     font-size: 2rem !important;
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
   }
 
   .front .description {
     font-size: 1rem !important;
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
   }
 
   .btndiscover, .btnexplore {
@@ -625,7 +632,7 @@ p {
 
   .heart-text, .bazaar-text, .big-text, .stilleto-text, .caravan-text, .concert-text, .firework-text {
     margin-left: 0 !important;
-    order: 2;
+    order: 2 !important;
     width: 100% !important;
   }
 
@@ -643,7 +650,7 @@ p {
 
   .heartshoe h1 {
     font-size: 2rem !important;
-    padding: 0 15px;
+    padding: 0 15px !important;
   }
   
   .navbar {
@@ -676,16 +683,16 @@ p {
   .heart-text h5, .bazaar-text h5, .big-text h5, .stilleto-text h5, .caravan-text h5, .concert-text h5, .firework-text h5  {
     font-size: 1.3rem !important;
   }
-}
 
 .info-text {
-  display: none;
-  margin-top: 10px;
-  background-color: #eee;
-  padding: 10px;
-  border-radius: 5px;
+  display: none !important;
+  margin-top: 10px !important;
+  background-color: #eee !important;
+  padding: 10px !important;
+  border-radius: 5px !important;
 }
 
 .image-box.active .info-text {
-  display: block;
+  display: block !important;
+}
 }
